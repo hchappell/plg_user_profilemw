@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fields name="profilemw">
+		<fieldset
+			name="profilemw"
+			label="PLG_USER_PROFILEMW_SLIDER_LABEL"
+		>
+			
+			<field
+				name="subscribe"
+				type="checkbox"
+				id="subscribe"
+				description="PLG_USER_PROFILEMW_FIELD_SUBSCRIBE_DESC"
+				label="PLG_USER_PROFILEMW_FIELD_SUBSCRIBE_LABEL"
+				message="PLG_USER_PROFILEMW_FIELD_SUBSCRIBE_MESSAGE"
+				value="1"
+				checked="0"
+			/>
+
+			<field
+				name="wherehear"
+				type="SelectOrText"
+				id="wherehear"
+				size="20"
+				description="PLG_USER_PROFILEMW_FIELD_WHEREHEAR_DESC"
+				label="PLG_USER_PROFILEMW_FIELD_WHEREHEAR_LABEL"
+				message="PLG_USER_PROFILEMW_FIELD_WHEREHEAR_MESSAGE"
+			>
+			<option value="">PLG_USER_PROFILEMW_OPTION_WHEREHEAR_TEXT</option>
+			<option value="School">PLG_USER_PROFILEMW_OPTION_WHEREHEAR_SCHOOL</option>
+			<option value="ENETWild">PLG_USER_PROFILEMW_OPTION_WHEREHEAR_ENETWILD</option>
+			<option value="NBN">PLG_USER_PROFILEMW_OPTION_WHEREHEAR_NATBIONET</option>
+			<option value="ENETWild">PLG_USER_PROFILEMW_OPTION_WHEREHEAR_NSLIVE</option>
+			<option value="Hancock">PLG_USER_PROFILEMW_OPTION_WHEREHEAR_HANCOCK</option>
+			<option value="BESSummerSchool">PLG_USER_PROFILEMW_OPTION_WHEREHEAR_BES_SUMMER_SCH</option>
+			<option value="BES">PLG_USER_PROFILEMW_OPTION_WHEREHEAR_BES</option>
+			<option value="BTOMagazine">PLG_USER_PROFILEMW_OPTION_WHEREHEAR_BTOMAGAZINE</option>
+			<option value="NatureSpy">PLG_USER_PROFILEMW_OPTION_WHEREHEAR_NATURESPY</option>
+			<option value="NHSN">Natural History Society of Northumberland</option>
+			<option value="DWT">PLG_USER_PROFILEMW_OPTION_WHEREHEAR_DWT</option>
+			<option value="Recommendation">PLG_USER_PROFILEMW_OPTION_WHEREHEAR_RECOMMEND</option>
+			<option value="Facebook">PLG_USER_PROFILEMW_OPTION_WHEREHEAR_FACEBOOK</option>
+			<option value="Twitter">PLG_USER_PROFILEMW_OPTION_WHEREHEAR_TWITTER</option>
+			<option value="Twitter">PLG_USER_PROFILEMW_OPTION_WHEREHEAR_INSTAGRAM</option>
+			<option value="WILD">PLG_USER_PROFILEMW_OPTION_WHEREHEAR_WILD</option>
+
+			</field>
+
+			<field
+				name="gardenbw"
+				type="text"
+				label="PLG_USER_PROFILEMW_FIELD_GARDENBW_LABEL"
+				description="PLG_USER_PROFILEMW_FIELD_GARDENBW_DESC"
+				filter="string"
+				size="30"
+			/>
+
+			<field
+				name="tos"
+				type="checkbox"
+				label="PLG_USER_PROFILEMW_FIELD_TOS_LABEL"
+				description="PLG_USER_PROFILEMW_FIELD_TOS_DESC"
+				checked="0"
+				value="1"
+				required="true"
+				>
+			</field>
+		</fieldset>
+	</fields>
+</form>

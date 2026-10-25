@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="plugin" group="user">
+	<name>plg_user_profilemw</name>
+	<author>Helen Chappell</author>
+	<creationDate>January 2019</creationDate>
+	<copyright>(C) 2008 Open Source Matters, Inc.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>helen.chappell@rhombustechnology.co.uk</authorEmail>
+	<authorUrl>www.rhombustechnology.co.uk</authorUrl>
+	<version>2.0.0</version>
+	<description>PLG_USER_PROFILEMW_XML_DESCRIPTION</description>
+	<namespace path="src">MammalWeb\Plugin\User\ProfileMW</namespace>
+	<files>
+		<folder>forms</folder>
+		<folder plugin="profilemw">services</folder>
+		<folder>src</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_user_profilemw.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_user_profilemw.sys.ini</language>
+		<language tag="es-ES">language/es-ES/es-ES.plg_user_profilemw.ini</language>
+		<language tag="es-ES">language/es-ES/es-ES.plg_user_profilemw.sys.ini</language>
+		<language tag="de-DE">language/de-DE/de-DE.plg_user_profilemw.ini</language>
+		<language tag="de-DE">language/de-DE/de-DE.plg_user_profilemw.sys.ini</language>
+		<language tag="pl-PL">language/pl-PL/pl-PL.plg_user_profilemw.ini</language>
+		<language tag="pl-PL">language/pl-PL/pl-PL.plg_user_profilemw.sys.ini</language>
+		<language tag="hr-HR">language/hr-HR/hr-HR.plg_user_profilemw.ini</language>
+		<language tag="hr-HR">language/hr-HR/hr-HR.plg_user_profilemw.sys.ini</language>
+		<language tag="hu-HU">language/hu-HU/hu-HU.plg_user_profilemw.ini</language>
+		<language tag="hu-HU">language/hu-HU/hu-HU.plg_user_profilemw.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" >
+				<field
+					name="register-require-user"
+					type="spacer"
+					label="PLG_USER_PROFILEMW_FIELD_NAME_REGISTER_REQUIRE_USER"
+					class="text"
+				/>
+
+				<field
+					name="register-require_subscribe"
+					type="list"
+					label="PLG_USER_PROFILEMW_FIELD_SUBSCRIBE_LABEL"
+					default="1"
+					filter="integer"
+					validate="options"
+					>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+
+				<field
+					name="register-require_wherehear"
+					type="list"
+					label="PLG_USER_PROFILEMW_FIELD_WHEREHEAR_LABEL"
+					default="1"
+					filter="integer"
+					validate="options"
+					>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+
+				<field
+					name="register-require_gardenbw"
+					type="list"
+					label="PLG_USER_PROFILEMW_FIELD_GARDENBW_LABEL"
+					default="1"
+					filter="integer"
+					validate="options"
+					>
+					<option	value="2">JOPTION_REQUIRED</option>
+					<option	value="1">JOPTION_OPTIONAL</option>
+					<option	value="0">JDISABLED</option>
+				</field>
+
+				<field
+					name="register-require_tos"
+					type="list"
+					label="PLG_USER_PROFILEMW_FIELD_TOS_LABEL"
+					default="2"
+					filter="integer"
+					validate="options"
+					>
+					<option	value="2">JOPTION_REQUIRED</option>
+					<option	value="0">JDISABLED</option>
+				</field>
+
+				<field
+					name="profilemw-require-user"
+					type="spacer"
+					label="PLG_USER_PROFILEMW_FIELD_NAME_PROFILE_REQUIRE_USER"
+					class="text"
+				/>
+
+				<field
+					name="profilemw-require_subscribe"
+					type="list"
+					label="PLG_USER_PROFILEMW_FIELD_SUBSCRIBE_LABEL"
+					default="1"
+					filter="integer"
+					validate="options"
+					>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+
+				<field
+					name="profilemw-require_wherehear"
+					type="list"
+					label="PLG_USER_PROFILEMW_FIELD_WHEREHEAR_LABEL"
+					default="1"
+					filter="integer"
+					validate="options"
+					>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+
+				<field
+					name="profilemw-require_gardenbw"
+					type="list"
+					label="PLG_USER_PROFILEMW_FIELD_GARDENBW_LABEL"
+					default="1"
+					filter="integer"
+					validate="options"
+					>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+
+				
+			</fieldset>
+		</fields>
+	</config>
+</extension>
